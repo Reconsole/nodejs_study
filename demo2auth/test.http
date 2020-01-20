@@ -1,0 +1,28 @@
+@uri=http://localhost:3000/api
+
+###
+GET {{uri}}
+
+
+###
+POST {{uri}}/register
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "password": "123456"
+}
+
+###
+POST {{uri}}/login
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "password": "123456"
+}
+
+### 个人信息
+
+GET  {{uri}}/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlMjUyMzNkNzE2OGI0NjIzYTM0NGE2MiIsImlhdCI6MTU3OTQ5NzQxNH0.lgE8hjfjIU5z9hPR0-ES8rDqwZ-PuRrm2y27ZR2MSAo
