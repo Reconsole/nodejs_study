@@ -34,11 +34,15 @@ app.get('/products/:id', async (req, res) => {
   const data = await Product.findById(req.params.id)
   res.send(data)
 })
+
+
 app.post('/products', async (req, res) => {
   const data = req.body
   const product = await Product.create(data)
   res.send(product)
 })
+
+
 app.put('/products/:id', async (req, res) => {
   // 查找
   const product = await Product.findById(req.params.id)
