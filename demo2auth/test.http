@@ -16,7 +16,6 @@ Content-Type: application/json
 ###
 POST {{uri}}/login
 Content-Type: application/json
-
 {
   "username": "user2",
   "password": "123456"

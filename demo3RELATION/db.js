@@ -25,7 +25,7 @@ const Post = mongoose.model('Post', new mongoose.Schema({
 }))
 const main = async () => {
   // await Category.insertMany([
-  //   { name: 'vuejs' },
+  //   { name: 'Vuejs' },
   //   { name: 'nodejs' },
   // ])
   // 查关联名称
